@@ -1,4 +1,4 @@
-# Web App From Scratch @cmda-minor-web 2021 - 2022
+# Web App From Scratch @cmda-minor-web 2022 - 2023
 
 <!-- Add a link to your live demo in Github Pages 🌐-->
 

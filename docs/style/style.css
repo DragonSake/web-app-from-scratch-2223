@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+h1{
+    background: -webkit-linear-gradient(#F9F295, #E0AA3e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Cormorant Infant";
+    font-size: 70px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.bg{
+    /* background-image: url('../images/flower.gif'); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.logo{
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+}
+
+.logo2{
+    width: 250%;
+    position: absolute;
+    top: -8.25em;
+    right: -9em;
+}
+
+img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    z-index: 0;
+}
+
+p{
+    font-size: 30px;
+    height: 50px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.card {
+  position: relative;
+  margin-top: 12% !important;
+  margin: auto;
+  width: 60%;
+  height: 650px;
+  z-index: 1;
+  /* overflow: hidden; */
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 -3em 3em rgb(0 0 0 / 10%), 0.3em 0.3em 1em rgb(0 0 0 / 30%);
+  height: 100%;
+  width: 100%;
+  line-height: 300px;
+  color: #787878;
+  text-align: center;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  top: 0;
+}
+
+.back {
+  transform: rotateY( 180deg );
+}
+
+.crop{
+    width: 600px;
+    overflow: hidden;
+    height: 600px;
+    position: absolute;
+    right: 0;
+}
+
+.fa{
+    margin-right: 15px;
+}

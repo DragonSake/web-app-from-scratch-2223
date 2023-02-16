@@ -53,15 +53,15 @@ p{
 }
 
 hr{
-  width: 80%;
-  margin: auto;
+  width: 50%;
+  margin-left: 6em;
+  position: absolute;
+  top: 43em;
 }
 
 button{
   font-size: 30px;
   padding: 10px 20px;
-  margin-left: 16em;
-  margin-top: 2em;
   background-color: var(--black);
   color: var(--white);
 }
@@ -69,4 +69,28 @@ button{
 button:hover{
   background-color: var(--yellow);
   color: var(--black);
+}
+
+ul{
+  margin-left: 10em;
+  margin-top: 5.5em;
+}
+
+li{
+  list-style-type: none;
+  display: inline;
+  position: absolute;
+  top: 48.5em;
+}
+
+li:first-of-type{
+  left: 37em;
+}
+
+li:nth-of-type(2){
+  left: 54em;
+}
+
+li:nth-of-type(3){
+  left: 71em;
 }

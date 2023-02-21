@@ -4,24 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <script type="module" src="./scripts/func.js"></script> -->
   <title>Single Page App</title>
   <link rel="stylesheet" href="./style/style.css">
-  <!-- <link href='https://fonts.googleapis.com/css?family=Cormorant Infant' rel='stylesheet'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 </head>
 
 <body>
   <main>
     <section>
+      <figure>
       <h1>
         Quote
       </h1>
-      <h2>
-
-      </h2>
-      <p>
-
-      </p>
+      <blockquote id="typewriter"></blockquote>
+      <figcaption>
+      </figcaption>
       <hr>
 
       <ul>
@@ -35,11 +32,18 @@
       <button type="button">Next quote</button>
       </li>
     </ul>
+  </figure>
     </section>
+
+    <section>
+      <label for="searchbox">Search</label>
+      <input type="search" 
+            id="searchbox" placeholder="Insert keyword..">
+          </section>
   </main>
   
 
-  <script src="./scripts/js.js"></script>
+  <script src="./scripts/js.js" type="module"></script>
 </body>
 
 </html>

@@ -1,5 +1,19 @@
-var data;
-var counter = 0;
+import { prevnext } from "./func.js";
+
+export let data;
+export let counter = 0;
+    
+export const h2 = document.querySelector('blockquote')
+export const p = document.querySelector('figcaption')
+
+const vorige = document.querySelector('button:first-of-type')
+const random = document.querySelector('li:nth-of-type(2) button')
+const next = document.querySelector('li:nth-of-type(3) button')
+
+// export var i = 0;
+// export var speed = 50;
+// export var txt = 'Lorem ipsum typing effect!';
+
 function fetchData (){
     const url = "https://type.fit/api/quotes"
 
@@ -11,42 +25,20 @@ function fetchData (){
                         })
     }
 
-const h2 = document.querySelector('h2')
-const p = document.querySelector('p')
-
-const vorige = document.querySelector('button:first-of-type')
-const random = document.querySelector('li:nth-of-type(2) button')
-const next = document.querySelector('li:nth-of-type(3) button')
-    
-function prevnext(data) {
-    const quote = data[counter].text
-    const naam = data[counter].author
-
-    console.log(data)
-
-    h2.textContent = `${quote} `;
-    p.textContent =  `~ ${naam} `;
-}
-
 fetchData();
 
 vorige.addEventListener("click", function() {
-    console.log(next);
-
     counter--;
-    
     prevnext(data);
 });
 
 next.addEventListener("click", function() {
-    console.log(next);
-    
     counter++;
-    
     prevnext(data);
 });
 
 random.addEventListener("click", function() {
-    console.log(random);
-
+    counter = Math.floor(Math.random() * 1642);
+    prevnext(data);
 });
+

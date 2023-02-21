@@ -1,4 +1,4 @@
-import { prevnext } from "./func.js";
+import { prevnext } from "./prevnext.js";
 
 export let data;
 export let counter = 0;

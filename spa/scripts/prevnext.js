@@ -1,7 +1,7 @@
-import {data} from './js.js'
-import {counter} from './js.js'
-import {h2} from './js.js'
-import {p} from './js.js'
+import {data, counter, h2, p} from './js.js'
+// import {counter} from './js.js'
+// import {h2} from './js.js'
+// import {p} from './js.js'
 
 // import {i} from './js.js'
 // import {speed} from './js.js'

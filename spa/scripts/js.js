@@ -1,4 +1,5 @@
 import { prevnext } from "./prevnext.js";
+// import { fetchData } from "./fetch.js";
 
 export let data;
 export let counter = 0;

@@ -16,10 +16,12 @@
       <h1>
         Quote
       </h1>
-      <blockquote id="typewriter"></blockquote>
-      <figcaption>
-      </figcaption>
-      <hr>
+      <blockquote></blockquote>
+      <figcaption></figcaption>
+      <div id="loading">
+        <img src="./images/loading.gif" alt="loading">
+        <p class="loading2">Loading...</p>
+    </div>
 
       <ul>
       <li>
@@ -34,16 +36,20 @@
     </ul>
   </figure>
     </section>
-
+      
     <section>
-      <label for="searchbox">Search</label>
       <input type="search" 
-            id="searchbox" placeholder="Insert keyword..">
-          </section>
+            id="searchbox" placeholder="Search">
+      <h2 class="h2">Other quotes</h2>
+      <ul id="quoten">
+      </ul>
+    </section>
+         
+
   </main>
-  
 
   <script src="./scripts/js.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/routie/0.3.2/routie.min.js"></script>
 </body>
 
 </html>

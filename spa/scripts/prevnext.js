@@ -1,19 +1,12 @@
 import {counter, blockquote, figcaption, setCounterToValue} from './js.js'
-// import {counter} from './js.js'
-// import {h2} from './js.js'
-// import {p} from './js.js'
-
-// import {i} from './js.js'
-// import {speed} from './js.js'
-// import {txt} from './js.js'
 
 export function prevnext(data) {
-    console.log("hoi")
-    if (counter > data.length){
+    let length = data.length;
+
+    if (counter > length){
         setCounterToValue(0);
     }else if (counter < 0){
-        console.log(data.length)
-        setCounterToValue(data.length - 1);
+        setCounterToValue(length - 1);
     // }else if (i < txt.length) {
     //     txt = h2;
     //     document.getElementById("typewriter").innerHTML += h2.charAt(i);

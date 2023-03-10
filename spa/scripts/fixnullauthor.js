@@ -6,3 +6,6 @@ export function fixNullAuthor(onbekend){
         return val;
     })
 }
+
+// Checkt in de array of er authors zijn met de value null en vervangt die met onbekend.
+// Vervolgens returnt hij de nieuwe array 

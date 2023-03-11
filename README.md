@@ -6,7 +6,7 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 ***
 
-### Table of contents
+## Table of contents
 
 * Installation
 * Features
@@ -14,6 +14,7 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 * License
 
 ***
+
 <!-- How about a section that describes how to install this project? 🤓 --> ### Installation
 
 <!-- ...but how does one use this project? What are its features 🤔 --> ### Features
@@ -34,9 +35,9 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 - [x] Responsive (ish)
 - [x] Modules (ish)
-- [] Filter/search
-- [] Route
-- [] Typewriter animation
+- [ ] Filter/search
+- [ ] Route
+- [ ] Typewriter animation
 
 ***
 

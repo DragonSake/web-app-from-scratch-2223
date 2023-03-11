@@ -15,9 +15,19 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 ***
 
-<!-- How about a section that describes how to install this project? 🤓 --> ### Installation
+<!-- How about a section that describes how to install this project? 🤓 --> 
 
-<!-- ...but how does one use this project? What are its features 🤔 --> ### Features
+### Installation
+
+Clone the repository
+
+```
+git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
+```
+
+<!-- ...but how does one use this project? What are its features 🤔 --> 
+
+### Features
 
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
 
@@ -32,7 +42,6 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 - [x] Button random quote
 - [x] CMD style
 - [x] Blank, loading and error state
-
 - [x] Responsive (ish)
 - [x] Modules (ish)
 - [ ] Filter/search

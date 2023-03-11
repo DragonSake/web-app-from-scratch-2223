@@ -10,6 +10,7 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 * Installation
 * Features
+* API
 * Checklist
 * License
 
@@ -30,6 +31,8 @@ git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
 ### Features
 
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
+
+### API
 
 ***
 

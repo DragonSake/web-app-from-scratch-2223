@@ -16,8 +16,6 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 ***
 
-<!-- How about a section that describes how to install this project? 🤓 --> 
-
 ### Installation
 
 Clone the repository
@@ -26,11 +24,44 @@ Clone the repository
 git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
 ```
 
-<!-- ...but how does one use this project? What are its features 🤔 --> 
+***
 
 ### Features
 
-<!-- What external data source is featured in your project and what are its properties 🌠 -->
+Quote inladen
+
+![image](https://user-images.githubusercontent.com/40611000/224495192-975c8ec2-a09e-4808-80ac-a94c2c6c0571.png)
+
+I import the HMTL elements with the first 
+
+![image](https://user-images.githubusercontent.com/40611000/224491526-f8fb9d5d-f035-4d0f-83bf-d190cac498cf.png)
+
+10 random quotes generated
+
+![image](https://user-images.githubusercontent.com/40611000/224495213-e68409c7-4668-4845-aef2-db75db3b6db8.png)
+
+```JS
+const vorige = document.querySelector('button:first-of-type')
+const random = document.querySelector('li:nth-of-type(2) button')
+const next = document.querySelector('li:nth-of-type(3) button')
+
+vorige.addEventListener("click", function() {
+    counter--;
+    prevnext(data);
+});
+
+next.addEventListener("click", function() {
+    counter++;
+    prevnext(data);
+});
+
+random.addEventListener("click", function() {
+    counter = Math.floor(Math.random() * 1203);
+    prevnext(data);
+});
+```
+
+***
 
 ### API
 

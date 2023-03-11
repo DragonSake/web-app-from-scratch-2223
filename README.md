@@ -1,21 +1,45 @@
 # Web App From Scratch @cmda-minor-web 2022 - 2023
 
-<!-- Add a link to your live demo in Github Pages 🌐-->
+https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
-<!-- ☝️ replace this description with a description of your own work -->
+![Webw5](https://user-images.githubusercontent.com/40611000/224275146-19f5494b-ad0f-4e8e-8621-42406bd54646.PNG)
 
-<!-- replace the code in the /docs folder with your own, so you can showcase your work with GitHub Pages 🌍 -->
+***
 
-<!-- Add a nice poster image here at the end of the week, showing off your shiny frontend 📸 -->
+### Table of contents
 
-<!-- Maybe a table of contents here? 📚 -->
+* Installation
+* Features
+* Checklist
+* License
 
-<!-- How about a section that describes how to install this project? 🤓 -->
+***
+<!-- How about a section that describes how to install this project? 🤓 --> ### Installation
 
-<!-- ...but how does one use this project? What are its features 🤔 -->
+<!-- ...but how does one use this project? What are its features 🤔 --> ### Features
 
 <!-- What external data source is featured in your project and what are its properties 🌠 -->
 
-<!-- Maybe a checklist of done stuff and stuff still on your wishlist? ✅ -->
+***
 
-<!-- How about a license here? 📜 (or is it a licence?) 🤷 -->
+### Checklist
+
+- [X] Fetching data from API
+- [x] Show random quotes
+- [x] Button next quote
+- [x] Button last quote
+- [x] Button random quote
+- [x] CMD style
+- [x] Blank, loading and error state
+
+- [x] Responsive (ish)
+- [x] Modules (ish)
+- [] Filter/search
+- [] Route
+- [] Typewriter animation
+
+***
+
+### License
+
+MIT

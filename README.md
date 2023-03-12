@@ -6,7 +6,7 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 ***
 
-## Table of contents
+# Table of contents
 
 * Installation
 * Features
@@ -16,9 +16,9 @@ https://dragonsake.github.io/web-app-from-scratch-2223/spa/
 
 ***
 
-### Installation
+## Installation
 
-Clone the repository
+### Clone the repository
 
 ```
 git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
@@ -26,19 +26,18 @@ git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
 
 ***
 
-### Features
+## Features
 
-Generating quote
+### Generating quote
+
+![image](https://user-images.githubusercontent.com/40611000/224495192-975c8ec2-a09e-4808-80ac-a94c2c6c0571.png)
 
 I'm importing the first quote and author from the API and show it on the website.
-
-This is the code
 
 ```JS
 async function fetchData (){
     const url = "https://type.fit/api/quotes/"
 
-    // Wacht totdat de url is gefetcht
     await fetch(url)
     .then(response => {
         if (!response.ok) { // Als de status okay is
@@ -51,22 +50,18 @@ async function fetchData (){
         // Voert de functie uit
         showLoading();
 
-        // Verandert de data in de array die gefilterd is met de array die 99 of minder karakters heeft
         data = val.filter(quote => quote.text.length < 100);
 
-        // Definieert de data met de array waarin alle null is veranderd naar onbekend
         data = fixNullAuthor(data);
-        // Voert de functie uit
         prevnext(data);
         lijstje(data);
         hideLoading();
     })
 ```
 
-![image](https://user-images.githubusercontent.com/40611000/224495192-975c8ec2-a09e-4808-80ac-a94c2c6c0571.png)
-
 ***
-Buttons
+
+### Buttons
 
 I select the HMTL elements (the 3 buttons) with the first 3 lines and I save them in a constant.
 
@@ -137,13 +132,13 @@ export function prevnext(data) {
 
 ***
 
-10 random quotes generated
+### 10 random quotes generated
 
 ![image](https://user-images.githubusercontent.com/40611000/224495213-e68409c7-4668-4845-aef2-db75db3b6db8.png)
 
 
 
-### API
+## API
 
 This is the API I used for this quote generator
 
@@ -194,7 +189,7 @@ export async function fetchData (){
 
 ***
 
-### Checklist
+## Checklist
 
 - [X] Fetching data from API
 - [x] Show random quotes
@@ -208,9 +203,10 @@ export async function fetchData (){
 - [ ] Filter/search
 - [ ] Route
 - [ ] Typewriter animation
+- [ ] Random quote at the beginning on the left (maybe)
 
 ***
 
-### License
+## License
 
 MIT

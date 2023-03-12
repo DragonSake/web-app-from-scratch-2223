@@ -28,13 +28,51 @@ git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
 
 ### Features
 
-Quote inladen
+Generating quote
+
+I'm importing the quote and author from the API and show it on the website.
+
+This is the code
+
+```JS
+async function fetchData (){
+    const url = "https://type.fit/api/quotes/"
+
+    // Wacht totdat de url is gefetcht
+    await fetch(url)
+    .then(response => {
+        if (!response.ok) { // Als de status okay is
+          throw new Error('404 API NOT FOUND');
+        }
+        return response.json();
+    })
+
+    .then(val => {
+        // Voert de functie uit
+        showLoading();
+
+        // Verandert de data in de array die gefilterd is met de array die 99 of minder karakters heeft
+        data = val.filter(quote => quote.text.length < 100);
+
+        // Definieert de data met de array waarin alle null is veranderd naar onbekend
+        data = fixNullAuthor(data);
+        // Voert de functie uit
+        prevnext(data);
+        lijstje(data);
+        hideLoading();
+    })
+```
 
 ![image](https://user-images.githubusercontent.com/40611000/224495192-975c8ec2-a09e-4808-80ac-a94c2c6c0571.png)
+
+***
+Buttons
 
 I import the HMTL elements with the first 
 
 ![image](https://user-images.githubusercontent.com/40611000/224491526-f8fb9d5d-f035-4d0f-83bf-d190cac498cf.png)
+
+***
 
 10 random quotes generated
 

@@ -63,6 +63,8 @@ async function fetchData (){
 
 ### Buttons
 
+![image](https://user-images.githubusercontent.com/40611000/224491526-f8fb9d5d-f035-4d0f-83bf-d190cac498cf.png)
+
 I select the HMTL elements (the 3 buttons) with the first 3 lines and I save them in a constant.
 
 After that I add an eventlistener to it. 
@@ -126,9 +128,6 @@ export function prevnext(data) {
     blockquote.textContent = `${quote} `;
     figcaption.textContent =  `~ ${naam} `;
 ```
-
-***
-![image](https://user-images.githubusercontent.com/40611000/224491526-f8fb9d5d-f035-4d0f-83bf-d190cac498cf.png)
 
 ***
 

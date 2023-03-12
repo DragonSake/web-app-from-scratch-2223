@@ -30,7 +30,7 @@ git clone https://https://github.com/DragonSake/web-app-from-scratch-2223.git
 
 Generating quote
 
-I'm importing the quote and author from the API and show it on the website.
+I'm importing the first quote and author from the API and show it on the website.
 
 This is the code
 
@@ -68,15 +68,21 @@ async function fetchData (){
 ***
 Buttons
 
-I import the HMTL elements with the first 
+I select the HMTL elements (the 3 buttons) with the first 3 lines and I save them in a constant.
 
-![image](https://user-images.githubusercontent.com/40611000/224491526-f8fb9d5d-f035-4d0f-83bf-d190cac498cf.png)
+After that I add an eventlistener to it. 
 
-***
+If the button is clicked, perform the function prevnext.
 
-10 random quotes generated
+It will also -1, give a random number or add 1 to the counter.
 
-![image](https://user-images.githubusercontent.com/40611000/224495213-e68409c7-4668-4845-aef2-db75db3b6db8.png)
+Depending on which button is clicked, the actions are different.
+
+If you click on previous quote, you'll see the previous quote.
+
+If you click on random quote, you'll see a random quote.
+
+And if you click on next quote, you'll see the next quote.
 
 ```JS
 const vorige = document.querySelector('button:first-of-type')
@@ -99,7 +105,43 @@ random.addEventListener("click", function() {
 });
 ```
 
+The prevnext function
+
+If the counter becomes 1204 and the length of the array is 1203, then the counter changes to 0.
+
+If the counter is less than 0 (when you enter the page and press previous quote), the counter changes to 1202.
+
+The text and name are stored in a constant.
+
+The text and name are saved in blockquote and figcaption.
+
+```JS
+import {counter, blockquote, figcaption, setCounterToValue} from './js.js'
+
+export function prevnext(data) {
+    if (counter > data.length){
+        setCounterToValue(0);
+    }else if (counter < 0){
+        setCounterToValue(1202);
+      }
+
+    const quote = data[counter].text
+    const naam = data[counter].author
+
+    blockquote.textContent = `${quote} `;
+    figcaption.textContent =  `~ ${naam} `;
+```
+
 ***
+![image](https://user-images.githubusercontent.com/40611000/224491526-f8fb9d5d-f035-4d0f-83bf-d190cac498cf.png)
+
+***
+
+10 random quotes generated
+
+![image](https://user-images.githubusercontent.com/40611000/224495213-e68409c7-4668-4845-aef2-db75db3b6db8.png)
+
+
 
 ### API
 

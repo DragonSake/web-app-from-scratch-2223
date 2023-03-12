@@ -135,7 +135,40 @@ export function prevnext(data) {
 
 ![image](https://user-images.githubusercontent.com/40611000/224495213-e68409c7-4668-4845-aef2-db75db3b6db8.png)
 
+This function generates 10 random quotes in a list.
 
+First, I select the id from the HTML.
+
+Then it starts looping 10 times.
+
+After that, it gives a random numbe to the variable counter.
+
+The quote and author are getting saved in a constant.
+
+Then it creates a li element and put the constants quote and naam in the HTML elements h2 and p.
+
+As last, it adds a li to the section.
+
+```JS
+export function lijstje(data){
+    const section = document.querySelector('#quoten')
+    
+    for (let i = 0; i < 10; i++) {
+        var counter = Math.floor(Math.random() * data.length - 1);
+        
+        const quote = data[counter].text
+        const naam = data[counter].author
+    
+        const li = document.createElement('li');
+        li.innerHTML = `
+            <h2>${quote}</h2>
+            <p>~${naam}</p>
+        `;
+
+        section.appendChild(li);
+    }
+}
+```
 
 ## API
 
